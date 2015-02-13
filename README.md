@@ -1,4 +1,4 @@
-# linear algebra note
+# data mining note
 
 **Pattern Discovery** by *Jiawei Han*, Coursera
 
