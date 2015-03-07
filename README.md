@@ -1,4 +1,4 @@
-# data mining note
+# data analysis note
 
 **Pattern Discovery** by *Jiawei Han*, Coursera
 
