@@ -35,7 +35,7 @@ exp(700 * -9.308e-03) / exp(710 * -9.308e-03)
 # 2.3
 
 predTest = predict(model, type="response", newdata=test)
-loans.predicted.risk = predTest
+test$predicted.risk = predTest
 table(test$not.fully.paid, predTest >= 0.5)
 table(test$not.fully.paid)
 
@@ -51,5 +51,37 @@ auc
 
 # smart baseline
 
+str(loans)
+# bivariate model
+model2 = glm(not.fully.paid ~ int.rate, data=train, family=binomial)
+predTest2 = predict(model2, type="response", newdata=test)
+max(predTest2)
 
+table(test$not.fully.paid, predTest2 >= 0.5)
+
+# auc
+ROCpredTest2 = prediction(predTest2, test$not.fully.paid)
+auc = as.numeric(performance(ROCpredTest2, "auc")@y.values)
+auc
+
+10 * exp(0.06 * 3)
+
+# 5.1
+test$profit = exp(test$int.rate*3) - 1
+test$profit[test$not.fully.paid == 1] = -1
+max(test$profit) * 10
+
+# 6.1
+highRisk = subset(test, int.rate >= 0.15)
+mean(highRisk$profit)
+summary(highRisk$not.fully.paid)
+mean(test$profit)
+summary(test$not.fully.paid)
+
+# 6.2
+cutoff = sort(highRisk$predicted.risk, decreasing = FALSE)[100]
+selectedLoans = subset(highRisk, predicted.risk <= cutoff)
+
+sum(selectedLoans$profit)
+table(selectedLoans$not.fully.paid)
 
