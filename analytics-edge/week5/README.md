@@ -1,4 +1,4 @@
-## Text Analysis
+## Text Analysis using Tweets
 
 is hard since
 
@@ -223,3 +223,56 @@ predictTwLog = predict(twLog, newdata=test, type="response")
 logCfMatrix = table(test$Negative, predictTwLog > 0.5)
 sum(diag(logCfMatrix)) / sum(logCfMatrix)
 ```
+
+## IBM Watson
+
+#### Step 1: Question Analysis
+
+Trying to find the **Lexical Answer Type** (LAT) of the question.
+
+- Ex: *Mozart's last and perhaps most powerful symphony share its name with this planet*
+- Ex: *Simmaer than only Greenland, it's the world's second largest island*
+
+Also perform **relation detection** to find relationships among words, and **decomposition** to split the question into different clues.
+
+#### Step 2: Hypothesis Generation
+
+Uses the question analysis from Step 1 to product **candidate answer** by searching the databases.
+
+Then each candidate answer plugged back into the question in place of the LAT is considered a hypothesis
+
+- Hypothesis 1: *Mozart's last and perhaps most powerful symphony shares its name with* **Mercury**
+
+If the correct answer is not generated at this stage, Watson has no hope of getting the question right.
+
+This step errors on the side of generating a lot of hypotheses, and leaves it up to the next step to find the correct answer.
+
+#### Step 3: Scoring Hypothesis
+
+Compute **confidence levels** for each possible answer combining a large number of different methods.
+
+- Need to accurately estimate the prob of a proposed anser being correct
+- Watson will only buzz in if a confidence level is ahove a threshold.
+
+#### Lighweight Scoring Algorithm
+
+Watson starts with **lightweight scoring algorithms** to prune down large set of hypotheses.
+
+- Ex: *What is the likelihood that a candidate anser is an instance of the LAT?*
+
+If this likelihood is not very high, throw away the hypothesis.
+
+#### Scoring Analytics
+
+Watson uses **passage search** to gather supporting evidence for each candidate answer. Retrieve passages that contain the hypothesis text
+
+### Step 4: Final Merging and Ranking
+
+Select the single best supported hypothesis. To do this, need to merge similar answers. Then, Rank the hypothesis and estimate confidence using logistic regression.
+
+The training data is a set of historical *Jeopardy* questions. Each of the scoring algorithms is an independent variable. Then, logistic regression is used to predict whether or not a candidate answer is correct.
+
+## Predictive Coding
+
+
+
