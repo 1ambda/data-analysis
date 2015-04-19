@@ -199,10 +199,15 @@ dim(tumorClusters) = c(nrow(tumorMatrix), ncol(tumorMatrix))
 image(tumorClusters, axes=FALSE, col=rainbow(k))
 ```
 
-![]() 
-![]() 
+#### Healty Brain
 
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/week6/images/healthy.png) 
 
+### Tumor (red area)
+
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/week6/images/tumor.png) 
+
+<br/>
 
 ### Comparison of Methods
 

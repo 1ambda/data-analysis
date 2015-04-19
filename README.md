@@ -2,6 +2,13 @@
 
 **Analytics Edge**, MIT
 
+[Week 1]() - Intro  
+[Week 2]() - Linear Regression  
+[Week 3](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week3) - Logistic Regression  
+[Week 4](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week4) - CART, Random Forest  
+[Week 5](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week5) - Text Analytics  
+[Week 6](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week6) - Clustering, Recommendation  
+
 <br/>
 
 **Pattern Discovery** by *Jiawei Han*, Coursera
