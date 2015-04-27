@@ -113,6 +113,8 @@ table(mvt$Weekday, mvt$Hour)
   Wednesday  804  863 1075 1076 1289 1580 1507 1718 1748 2093 1511
 ```
 
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/week7/screenshots/chicagoHeatMap.png)
+
 ```R
 DayHourCounts = as.data.frame(table(mvt$Weekday, mvt$Hour))
 str(DayHourCounts)
@@ -129,8 +131,6 @@ print(colorLineMVT)
 dev.off()
 
 # use heat map instead of plot
-
-![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/week7/screenshots/chicagoHeatMap.png)
 
 DayHourCounts$Var1 = factor(DayHourCounts$Var1, ordered=TRUE, levels=c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"))
 str(DayHourCounts)
