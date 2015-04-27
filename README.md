@@ -8,6 +8,7 @@
 [Week 4](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week4) - CART, Random Forest  
 [Week 5](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week5) - Text Analytics  
 [Week 6](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week6) - Clustering, Recommendation  
+[Week 6](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week7) - Visualization: Heat Map, Social Network, Wordcloud   
 
 <br/>
 
