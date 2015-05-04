@@ -1,5 +1,13 @@
 # Kaggle Competition: Popular News Articles
 
+![]()
+
+![]()
+
+![]()
+
+
+
 ## Variables
 
 - NewsDesk = the New York Times desk that produced the story (Business, Culture, Foreign, etc.)
