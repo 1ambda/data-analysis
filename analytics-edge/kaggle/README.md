@@ -1,12 +1,10 @@
 # Kaggle Competition: Popular News Articles
 
-![]()
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/kaggle/screenshots/Heatmap.png)
 
-![]()
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/kaggle/screenshots/Hour.png)
 
-![]()
-
-
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/kaggle/screenshots/dayOfWeek.png)
 
 ## Variables
 
