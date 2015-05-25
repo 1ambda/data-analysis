@@ -145,7 +145,7 @@ rocPerf = performance(rocPred, "tpr", "fpr")
 plot(rocPerf, colorize=TRUE, print.cutoffs.at = seq(0, 1, 0.1), text.ajd=c(-0.2, 1.7))
 ```
 
-![]()
+![](https://raw.githubusercontent.com/1ambda/data-analysis/master/analytics-edge/final/screenshots/ROC.png)
 
 ### k-fold Cross-Validation
 
@@ -224,3 +224,54 @@ aucTest       = as.numeric(performance(rocTestPred, "auc")@y.values)
 ```
 
 `glmText` is overfitted, and removing variables would improve its test set performance
+
+<br/>
+
+## Hubway Trips
+
+### Normalization
+
+```R
+library(caret)
+preproc = preProcess(hubway)
+hubwayNorm = predict(preproc, hubway)
+```
+
+### Clustering
+
+```R
+# 3.8 k-means
+set.seed(5000)
+k = 10
+
+km = kmeans(hubwayNorm, centers = k)
+sort(table(km$cluster))
+hubwayNorm$Cluster = km$cluster
+
+> km$centers
+
+# output
+
+       Duration    Morning  Afternoon    Evening      Weekday        Male
+1  -0.034237161 -0.6957001 -0.8159893  1.7328821  0.452730346  0.59720321
+2  -0.031644628 -0.6957001  1.2254436 -0.5770702  0.452730346 -0.11039559
+3  -0.075974588  1.2746943 -0.8159893 -0.5770702  0.002308007  0.59720321
+4  -0.033395894  1.4312812 -0.8159893 -0.5766432  0.211890485  0.53694181
+5   0.010658714 -0.6957001 -0.8159893  1.3165203 -2.208808422  0.02391135
+6  -0.029700264 -0.6957001  1.2076942 -0.5770702  0.444257434  0.20767851
+7   0.009374313  1.3613204 -0.8159893 -0.5770702  0.071729589 -1.67446286
+8   0.105065026 -0.6952729  1.2098284 -0.5770702 -2.208808422 -0.13141006
+9  -0.110953214  1.4020577 -0.8159893 -0.5770702  0.452730346  0.59720321
+10  0.466193222 -0.6898820 -0.8126896  1.7146806  0.447352956 -1.65174391
+           Age
+1  -0.21374647
+2  -0.54633125
+3  -0.75156212
+4   1.70549223
+5  -0.43695957
+6   1.30751246
+7  -0.07416553
+8  -0.18546466
+9   0.26224992
+10 -0.31480304
+```
