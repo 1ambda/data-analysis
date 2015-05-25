@@ -8,7 +8,11 @@
 [Week 4](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week4) - CART, Random Forest  
 [Week 5](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week5) - Text Analytics  
 [Week 6](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week6) - Clustering, Recommendation  
-[Week 6](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week7) - Visualization: Heat Map, Social Network, Wordcloud   
+[Week 7](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week7) - Visualization: Heat Map, Social Network, Wordcloud   
+[Week 8](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week8) - Linear Optimization  
+[Week 9](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week9) - Integer Optimization  
+[Kaggle Competition](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/kaggle) - Integer Optimization  
+[Final Exam](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/Final) - Final Exam: Regression, Clustering, Text Mining  
 
 <br/>
 
