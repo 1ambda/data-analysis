@@ -12,7 +12,7 @@
 [Week 8](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week8) - Linear Optimization  
 [Week 9](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week9) - Integer Optimization  
 [Kaggle Competition](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/kaggle) - Integer Optimization  
-[Final Exam](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/Final) - Final Exam: Regression, Clustering, Text Mining  
+[Final Exam](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/final) - Final Exam: Regression, Clustering, Text Mining  
 
 <br/>
 
