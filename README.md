@@ -11,7 +11,7 @@
 [Week 7](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week7) - Visualization: Heat Map, Social Network, Wordcloud   
 [Week 8](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week8) - Linear Optimization  
 [Week 9](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/week9) - Integer Optimization  
-[Kaggle Competition](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/kaggle) - Integer Optimization  
+[Kaggle Competition](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/kaggle) - [Predicting which NY Times Blog Articles Will Be Most Popular](https://www.kaggle.com/c/15-071x-the-analytics-edge-competition-spring-2015/)   
 [Final Exam](https://github.com/1ambda/data-analysis/tree/master/analytics-edge/final) - Final Exam: Regression, Clustering, Text Mining  
 
 <br/>
